@@ -37,7 +37,7 @@ def main():
     model.zero_grad() # we must clear the existing gradients before computing the new one so it won't combine with the previous one
 
     # STEP 8: Backpropagation
-    loss.backward()
+    loss.backward() # calcualte the weights, the gradient is not updated yet
 
     # STEP 9: Inspect gradients
     print("\nGradient information:")
